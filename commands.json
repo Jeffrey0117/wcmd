@@ -1,0 +1,202 @@
+{
+  "$schema": "./schema.json",
+  "$comment": "wcmd - Windows to Linux command mapping. For Linux users who know Windows commands.",
+
+  "dir": {
+    "prefer": ["eza", "lsd"],
+    "fallback": "ls -la",
+    "description": "List directory contents"
+  },
+
+  "type": {
+    "prefer": ["bat"],
+    "fallback": "cat",
+    "description": "Display file contents"
+  },
+
+  "copy": {
+    "prefer": [],
+    "fallback": "cp",
+    "description": "Copy files"
+  },
+
+  "move": {
+    "prefer": [],
+    "fallback": "mv",
+    "description": "Move/rename files"
+  },
+
+  "del": {
+    "prefer": [],
+    "fallback": "rm",
+    "description": "Delete files"
+  },
+
+  "cls": {
+    "prefer": [],
+    "fallback": "clear",
+    "description": "Clear terminal screen"
+  },
+
+  "where": {
+    "prefer": [],
+    "fallback": "which",
+    "description": "Locate a command"
+  },
+
+  "findstr": {
+    "prefer": ["rg"],
+    "fallback": "grep",
+    "description": "Search text patterns"
+  },
+
+  "md": {
+    "prefer": [],
+    "fallback": "mkdir -p",
+    "description": "Create directory"
+  },
+
+  "mkdir": {
+    "prefer": [],
+    "fallback": "mkdir -p",
+    "description": "Create directory"
+  },
+
+  "rd": {
+    "prefer": [],
+    "fallback": "rmdir",
+    "description": "Remove directory"
+  },
+
+  "rmdir": {
+    "prefer": [],
+    "fallback": "rm -r",
+    "description": "Remove directory"
+  },
+
+  "ren": {
+    "prefer": [],
+    "fallback": "mv",
+    "description": "Rename files"
+  },
+
+  "rename": {
+    "prefer": [],
+    "fallback": "mv",
+    "description": "Rename files"
+  },
+
+  "fc": {
+    "prefer": ["delta"],
+    "fallback": "diff",
+    "description": "Compare files"
+  },
+
+  "more": {
+    "prefer": ["bat"],
+    "fallback": "less",
+    "description": "Page through file"
+  },
+
+  "set": {
+    "prefer": [],
+    "fallback": "env",
+    "description": "Show environment variables"
+  },
+
+  "tasklist": {
+    "prefer": ["procs"],
+    "fallback": "ps aux",
+    "description": "List running processes"
+  },
+
+  "taskkill": {
+    "prefer": [],
+    "fallback": "kill",
+    "description": "Kill process"
+  },
+
+  "ipconfig": {
+    "prefer": [],
+    "fallback": "ip addr",
+    "description": "Network interface config"
+  },
+
+  "tracert": {
+    "prefer": [],
+    "fallback": "traceroute",
+    "description": "Trace packet route"
+  },
+
+  "mklink": {
+    "prefer": [],
+    "fallback": "ln -s",
+    "description": "Create symbolic link"
+  },
+
+  "ver": {
+    "prefer": [],
+    "fallback": "uname -a",
+    "description": "System version"
+  },
+
+  "systeminfo": {
+    "prefer": ["neofetch", "fastfetch"],
+    "fallback": "uname -a && free -h && df -h",
+    "description": "System information"
+  },
+
+  "clip": {
+    "prefer": ["xclip -selection clipboard"],
+    "fallback": "xsel --clipboard",
+    "description": "Copy to clipboard"
+  },
+
+  "start": {
+    "prefer": [],
+    "fallback": "xdg-open",
+    "description": "Open file with default app"
+  },
+
+  "notepad": {
+    "prefer": ["nvim", "vim"],
+    "fallback": "nano",
+    "description": "Text editor"
+  },
+
+  "explorer": {
+    "prefer": ["nautilus", "dolphin", "thunar"],
+    "fallback": "xdg-open .",
+    "description": "File explorer"
+  },
+
+  "attrib": {
+    "prefer": [],
+    "fallback": "chmod",
+    "description": "Change file attributes"
+  },
+
+  "tree": {
+    "prefer": ["eza --tree"],
+    "fallback": "tree",
+    "description": "Directory tree"
+  },
+
+  "echo": {
+    "prefer": [],
+    "fallback": "echo",
+    "description": "Print text"
+  },
+
+  "pause": {
+    "prefer": [],
+    "fallback": "read -p 'Press Enter to continue...'",
+    "description": "Pause execution"
+  },
+
+  "exit": {
+    "prefer": [],
+    "fallback": "exit",
+    "description": "Exit shell"
+  }
+}

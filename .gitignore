@@ -1,0 +1,6 @@
+# Generated files (can be regenerated anytime)
+out/
+
+# Python
+__pycache__/
+*.pyc
