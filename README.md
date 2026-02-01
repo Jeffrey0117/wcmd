@@ -10,7 +10,7 @@
 
 *A declarative command mapping engine that compiles a single JSON configuration into Linux shell scripts.*
 
-**Sister project of [cmdx](https://github.com/Jeffrey0117/cmdx) (Unix commands on Windows)**
+[cmdx](https://github.com/Jeffrey0117/cmdx) (Unix → Windows generator) · [winbat](https://github.com/Jeffrey0117/winbat) (CLI toolkit) · **wcmd** (Windows → Linux)
 
 </div>
 
@@ -137,15 +137,6 @@ wcmd/
 ├── out/               # Generated shell scripts (gitignored)
 └── README.md
 ```
-
----
-
-## Related Projects
-
-| Project | Description |
-|---------|-------------|
-| [cmdx](https://github.com/Jeffrey0117/cmdx) | Unix commands on Windows |
-| **wcmd** | Windows commands on Linux |
 
 ---
 
